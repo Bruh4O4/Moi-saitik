@@ -8,56 +8,57 @@
 </head>
 <body>
     <main>
-        <div class="a">a</div>
-        <section class="filling">
+        <section>
             <h1>Регистрация</h1>
+
             <div>
-                <form action="./index.html">
-                    <div>
-                        <label>
-                            Введите email
-                            <input 
-                                type="email"
-                                value="your@email.com"
-                                name="email"
-                                required
-                            >
-                        </label>
+                <form action="./try.html">
+                    <div class="form_div form_input">
+                        <label for="f_name">Имя</label>
+                        <input 
+                            type="text" 
+                            id="f_name" 
+                            placeholder="..."
+                            name="name"
+                            required
+                        >
                     </div>
-                    <div>
-                        <label for="pass">Введите пароль</label>
+
+                    <div class="form_div form_input">
+                        <label for="s_name">Фамилия</label>
+                        <input 
+                            type="text" 
+                            id="s_name" 
+                            placeholder="..."
+                            name="surname"
+                            required
+                        >
+                    </div>
+
+                    <div class="form_div form_input">
+                        <label for="email">Почта</label>
+                        <input 
+                            type="email"
+                            id="email"
+                            placeholder="your@email.com"
+                            name="email"
+                            required
+                        >
+                    </div>
+
+                    <div class="form_div form_input">
+                        <label for="pass">Пароль</label>
                         <input 
                             type="password" 
                             id="pass" 
-                            placeholder="password"
+                            placeholder="12345"
                             name="password"
                             required
                         >
                     </div>
-                    <div>
-                        <input 
-                            type="radio" 
-                            name="radio" 
-                            id="save" 
-                            value="save" 
-                            required
-                            class="radio"
-                        >
-                        <label for="save" class="radio">Сохранять данные</label>
-                    </div>
-                    <div>
-                        <input 
-                            type="radio" 
-                            name="radio" 
-                            id="not_save" 
-                            value="not_save"
-                        >
-                        <label for="not_save" class="radio">Не сохранять данные</label>
-                    </div>
-                    <div>
-                        <label for="adree">
-                            Согласен с обработкой данных
-                        </label>
+
+                    <div class="form_div">
+                        <label for="adree"> Согласен с обработкой данных </label>
                         <input 
                             type="checkbox"
                             name="adree"
@@ -65,44 +66,19 @@
                             required
                         >
                     </div>
-                    <div>
+
+                    <div class="form_div">
                         <button>Зарегистрироваться</button>
-                    </div>
-                    <br>
-                    <div class="start">
-                        <label for="num">Оцените сервис</label>
-                        <br>
-                        <input
-                            type="range"
-                            name="num"
-                            id="num"
-                            min="0"
-                            max="5"
-                        >
-                    </div>
-                    <div>
-                        <p>Комментарий</p>
-                        <textarea 
-                            name="text"
-                            rows="5"
-                            cols="50"
-                            placeholder="Введите текст"
-                            minlength="3"
-                            maxlength="200"
-                        ></textarea>
                     </div>
                 </form>
             </div>
-        </section>
-        <section class="try_st"></section>
-        <section>
-            <!-- <img
-                src="https://optim.tildacdn.com/tild3332-6664-4131-b836-383962356338/-/resize/744x/-/format/webp/Karelia_1.JPG.webp"
-                alt=""
-                class="bg"
-            > -->
+
+            <div id="a">
+                <a href="./">Уже есть аккаунт?</a>
+            </div>
         </section>
     </main>
+
     <footer>
         <div class="brdr">
             @заверено мной
