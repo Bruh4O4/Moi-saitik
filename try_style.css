@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body{
     background-color: #8a2be2;
     width: 100%;
@@ -128,6 +132,7 @@ hr{
 h2, h3, h4{
     color: #8a2be2;
     margin-top: 0px;
+    scroll-margin-top: 8vw;
 }
 h2, h3{
     font-size: 2vw;
